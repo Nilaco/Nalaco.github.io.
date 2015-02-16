@@ -41,6 +41,9 @@ h1 {
 	font-size: 70px;
 	font-family: cursive;
 }
+div h1 {
+	color:black;
+}
 h3 {
 	color: black;
 	font-size: 40px;
