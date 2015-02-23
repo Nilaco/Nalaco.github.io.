@@ -14,6 +14,11 @@
 	padding-right: 12px;
 	opacity: 0.8;
 }
+
+.code {
+	font-family: monospace;
+	color: red;
+}
 body {
 	background-image: url(../images/SanFrancisco2.jpg);
 	background-position: center;
