@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Blog's</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/index-stylesheets.css">
+
+</head>
+
+<body>
+
+  <div class="header">
+  <div class="header_button">
+    <a href="#"> About Me </a> . 
+    <a href="#"> Projects </a> . 
+    <a href="http://nilaco.github.io/blogs"> Blogs </a> </div>
+    <div class="home_button"> <a href="http://nilaco.github.io/">Home</a></div>
+    </div>
+
+        <div class="side_bar">
+      <a class="socialIcons" href="https://twitter.com/Niladaco" title="Follow Niladaco on Twitter" alt="Twitter Icon"><img src="../images/twitter-48.png" /></a>
+
+      <br><a class="socialIcons" href="https://plus.google.com/u/0/104266174014919442611/posts" title="Google+ Profile" alt="Google+ Icon"><img src="../images/googleplus-48.png" /></a>
+
+      <br><a class="socialIcons" href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" title="Linkedin Profile" alt="Linkedin Icon"><img src="../images/linkedin-48.png" /></a>
+      
+    </div>
+
+<h1>Blogs...</h1>
+
+    <div class="blog">
+    <h3>Travel .maps</h3> <!--title -->
+    <h5>Technical Blog</h5> <!--subtitle -->
+    <h5>01 MAR 15</h5> <!-- date -->
+
+      <p>
+        Useful Tip of the Day: Don't call a sailor's chart a "map".
+      </p>
+
+      <p>
+        So what is a .map, in Ruby? It is an Enumerable method.  Which means that it is something that is usable on data structures in order to apply code to do various things to the elements within said data structure.  Map is used to apply a code block to each element and return an array with the applied code.  It's easier to understand with an example.
+      </p>
+
+      <p> There is a family of 4 traveling to Iowa to visit their cousin, but in order to be seated next to each other on the plane, their last names must to be added to the system </p>
+
+      <p class="code"> family = ["gomez", "morticia", "pugsley", "wednesday"] <br>
+                        family.map do |member| <br>
+                          member.capitalize! <br>
+                          member << " Adams" <br>
+                        end
+      </p>
+
+      <p> 
+        Above, there is an array of names. The array then has .map called on it with 2 lines of code.  For each element in the array, those 2 lines of code are applied.  This results in the output array of:
+      </p>
+
+      <p class="code"> # =>["Gomez Adams", "Morticia Adams", "Pugsley Adams", "Wednesday Adams"] </p>
+
+      <p>
+        .map is extremely useful for adding or modifying each element in an array.  It is very simple and effective to use on data structures without needed to code a method to iterate each element separately.
+      </p> 
+
+
+
+    </div>
+</body>
+</main>
+
+</html>
