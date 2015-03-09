@@ -30,6 +30,71 @@
     
     <h1>Blogs...</h1>
 
+    <div class="blog">
+    <h3>Pairing is Caring</h3> <!--title -->
+    <h5>"Cultural Blog</h5> <!--subtitle -->
+    <h5>"08MAR15</h5> <!-- date -->
+
+      <p> Alright, how many people used that same title?</p>
+
+      <p>
+        So far all of my pair sessions have been great.  I always benefit from each partner and finish with useful ideas for individual coding.  Pairing is always fun and that really makes learning easier and rewarding.  It's nice to have someone either struggle with you or be able to help out instantly.  
+      </p>
+
+      <p>
+        One of the best parts about pairing is the feedback that is then received afterwards.  The feedback I have received has been extremely helpful and I have been keeping note of it during other pairings.  It's definitely nice to know how others feel about the session.
+      </p>
+
+      <p>
+        When giving feedback, the hardest thing for me is to find something I feel the other person needs to improve on.  Everyone has a different style, and it may work wonderfully for them and several other pairs, but maybe not so well with just one other individual.  So it's hard to determine if it was your pair doing something, or yourself that is just not used to that way/style.
+      </p>
+
+    </div>
+
+        <div class="blog">
+    <h3>Go to Class</h3> <!--title -->
+    <h5>"Technical Blog"</h5> <!--subtitle -->
+    <h5>"08MAR15</h5> <!-- date -->
+
+      <p>
+        The basis of object-oriented programming is the use of classes.  A class is the outer shell that is used to then create individual objects.  Think of a class as the basic definition of a car.  Someone says "car", and some values automatically become associated with it.  Wheels, Doors, Seats, Transmission, Windows...etc.  Though, inside of the "car" class, you can still define the specifics (White, 4 Seats, 4 Doors, Automatic).
+      </p>
+
+      <p>
+        So when would a class be useful? Whenever you want to make multiple versions of something.  Instead of having to redefine every single aspect of an object, you can use the class to cover the basics and get the rest all set up.  It simplifies the object creation process, and allows values across all instances of a class (instances being an object created from the class).
+      </p>
+
+      <p>
+        To use a class, you first define a class using "class NAME".  Then everything inside that class will be associated to the class and every object created from it. Just like methods, after you def the class you can then start adding more code blocks, setting variables, and doing whatever else you would ever like to do in your code.  I will set up a car class below, and leave some variables open to be specific when creating a new object.
+      </p>
+
+      <p class="code">
+        class Car <br>
+          attr_accessor :make, :seats, :wheels, :price <br><br>
+
+          def display <br>
+            puts @make <br>
+            puts @seats <br>
+            puts @wheels <br>
+            puts @price <br>
+          end <br><br>
+
+        end <br><br>
+
+        car = Car.new <br>
+        car.make = "CoolCars" <br>
+        car.price = 50000 <br>
+        car.seats = 4 <br><br>
+
+        car.display <br>
+      </p>
+
+      <p>
+        Above I created a class "Car", and assigned three variables. I used attr_accessor to make each variable to be both readable and writable in the code by using '@variable' anywhere within the class.  I then defined a method inside the class that when called, displays the value set for each variable.  Then, we create a new object from the class "Car", and assign values to each variable, and finally call the 'display' method for the specific object.
+      </p>
+
+    </div>
+
         </div>
 
     <div class="blog">
