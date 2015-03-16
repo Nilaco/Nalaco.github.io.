@@ -30,10 +30,41 @@
     
     <h1>Blogs...</h1>
 
+        <div class="blog">
+    <h3>Scoping</h3> <!--title -->
+    <h5>Technical Blog</h5> <!--subtitle -->
+    <h5>15MAR15</h5> <!-- date -->
+
+      <p>
+        A variables scope is where that variable will be accessible within a program.  By setting the scope of a variable, it can be accessed from other areas or levels in code.  There are several different variable scopes with Ruby: Global, Constant, Class, Instance, Local.
+      </p>
+
+      <p>
+        A global variable is distinguished by a $ in front: $global.  Globals are set in order to have access to the variable anywhere in a program.  Using a global variable is risky, as it can be altered from anywhere as well.
+      </p>
+
+      <p>
+        Constant variables begin with a capital letter and after they are given a value, should not be altered.  Constants are accessible anywhere within a class.  If a constant is declared outside of a class, it has the same scope as a global variable.
+      </p>
+
+      <p>
+        Class variables are declared by using @@ in front of the name.  These variables are declared in a class, and then are accessible by any instance of that class.  The class variable can be changed in other instances, and effects all instances of the class.
+      </p>
+
+      <p>
+        Instance variables are pretty similar to class variables.  Declared with a single @, instance variables are unique to their specific instance  of a class.  Changes are not spread amongst all instances of a class
+      </p>
+
+      <p>
+      The most basic, local variables.  Local variables are assigned without anything in front of them.  Accessible only within the code where they rest.  If a local variable is declared within a loop, that is the only place it can be accessed.
+      </p>
+
+    </div>
+
     <div class="blog">
     <h3>Pairing is Caring</h3> <!--title -->
-    <h5>"Cultural Blog</h5> <!--subtitle -->
-    <h5>"08MAR15</h5> <!-- date -->
+    <h5>Cultural Blog</h5> <!--subtitle -->
+    <h5>08MAR15</h5> <!-- date -->
 
       <p> Alright, how many people used that same title?</p>
 
@@ -51,10 +82,10 @@
 
     </div>
 
-        <div class="blog">
+    <div class="blog">
     <h3>Go to Class</h3> <!--title -->
-    <h5>"Technical Blog"</h5> <!--subtitle -->
-    <h5>"08MAR15</h5> <!-- date -->
+    <h5>Technical Blog"</h5> <!--subtitle -->
+    <h5>08MAR15</h5> <!-- date -->
 
       <p>
         The basis of object-oriented programming is the use of classes.  A class is the outer shell that is used to then create individual objects.  Think of a class as the basic definition of a car.  Someone says "car", and some values automatically become associated with it.  Wheels, Doors, Seats, Transmission, Windows...etc.  Though, inside of the "car" class, you can still define the specifics (White, 4 Seats, 4 Doors, Automatic).
@@ -92,10 +123,8 @@
       <p>
         Above I created a class "Car", and assigned three variables. I used attr_accessor to make each variable to be both readable and writable in the code by using '@variable' anywhere within the class.  I then defined a method inside the class that when called, displays the value set for each variable.  Then, we create a new object from the class "Car", and assign values to each variable, and finally call the 'display' method for the specific object.
       </p>
-
     </div>
-
-        </div>
+  </div>
 
     <div class="blog">
     <h3>Travel .maps</h3> <!--title -->
@@ -131,7 +160,7 @@
 
     </div>
 
-        <div class="blog">
+    <div class="blog">
     <h3>Technological Dependence</h3> <!--title -->
     <h5>Cultural Blog</h5> <!--subtitle -->
     <h5>01 March 15</h5> <!-- date -->
