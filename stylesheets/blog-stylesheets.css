@@ -15,10 +15,14 @@
 	opacity: 0.8;
 	font-size: 20px;
 }
-
-.code {
+.code_r {
 	font-family: monospace;
 	color: red;
+}
+
+.code_js {
+	font-family: monospace;
+	color: blue;
 }
 body {
 	background-image: url(../images/SanFrancisco2.jpg);

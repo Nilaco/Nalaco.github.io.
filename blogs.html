@@ -54,6 +54,29 @@
     </div>
 
     <div class="blog">
+    <h3>Just Around the Block</h3> <!--title -->
+    <h5>Technical Blog</h5> <!--subtitle -->
+    <h5>22MAR15</h5> <!-- date -->
+
+      <p>
+        How does programming promote laziness? Looping! Using loops allows you to go over a section over a section code any number of times without having to retype it. The concept of looping is pretty much the same, however the syntax differs between Ruby and Javascript (if you want it to). There are multiple types of loops to use, the most common are as follows:
+      </p>
+
+      <p>
+      For Loops: Loop through the code block once every time an element in the expression is reached.  For example: <p class = "code_r">for i in 0..10</p>(Ruby) will run the code every for every element in 0..10, which will temporarily be assigned to "i". The result would be every number from 0..10.  In Javascript the loop functions the same way, however, initialing can be seen as <p class = "code_js">for (i = 0; i <= 10; i++)</p>(JS).  In JS, all the parameters can be defined in the initial statement.  i = 0, sets the starting counter.  i <= 10, when this is met, the looping ends. i++, after every run of code, add 1 to the initial counter.
+      </p>
+
+      <p>
+      While Loops: Loop through the code block WHILE the condition is TRUE.  While loops will continually go through whatever code is held within, until the initializing expression becomes false. <p class = "code_r"> while survived = false </p> will run the loop as long as survived stays false.  As soon as survived becomes true, the code will not run.  JS also checks while loops the same while <p class = "code_js"> while (i < 15) </p>.  With the both examples, you need to make sure that there is something in the code that will eventually change the initial expression to FALSE.  Otherwise the while loop will never end.  Which is not a good thing.
+      </p>
+
+      <p>
+        Ruby also has an 'until' loop which is pretty much the opposite of while.  It will loop through the code while the expression is false, or UNTIL the expression is TRUE.
+      </p>
+
+    </div>
+
+    <div class="blog">
     <h3>Scoping</h3> <!--title -->
     <h5>Technical Blog</h5> <!--subtitle -->
     <h5>15MAR15</h5> <!-- date -->
@@ -141,7 +164,7 @@
         To use a class, you first define a class using "class NAME".  Then everything inside that class will be associated to the class and every object created from it. Just like methods, after you def the class you can then start adding more code blocks, setting variables, and doing whatever else you would ever like to do in your code.  I will set up a car class below, and leave some variables open to be specific when creating a new object.
       </p>
 
-      <p class="code">
+      <p class="code_r">
         class Car <br>
           attr_accessor :make, :seats, :wheels, :price <br><br>
 
@@ -183,7 +206,7 @@
 
       <p> There is a family of 4 traveling to Iowa to visit their cousin, but in order to be seated next to each other on the plane, their last names must to be added to the system </p>
 
-      <p class="code"> family = ["gomez", "morticia", "pugsley", "wednesday"] <br>
+      <p class="code_r"> family = ["gomez", "morticia", "pugsley", "wednesday"] <br>
                         family.map do |member| <br>
                           member.capitalize! <br>
                           member << " Addams" <br>
@@ -194,7 +217,7 @@
         Above, there is an array of names. The array then has .map called on it with 2 lines of code.  For each element in the array, those 2 lines of code are applied.  This results in the output array of:
       </p>
 
-      <p class="code"> # =>["Gomez Addams", "Morticia Addams", "Pugsley Addams", "Wednesday Addams"] </p>
+      <p class="code_r"> # =>["Gomez Addams", "Morticia Addams", "Pugsley Addams", "Wednesday Addams"] </p>
 
       <p>
         .map is extremely useful for adding or modifying each element in an array.  It is very simple and effective to use on data structures without needed to code a method to iterate each element separately.
@@ -258,17 +281,17 @@
 
     <p>Array elements are indexed starting from 0.  The first element in an array is 0, then 1, 2, 3, and so on.  To access these elements, simply add block quotes and the element number after the array, For example:</p>
 
-        <p class="code">my_array[4] # accesses element in position 4 (
+        <p class="code_r">my_array[4] # accesses element in position 4 (
         which would be the 5th element...in the array ;) )</p>
 
     <p>Elements can also be accessed from the end of an an array, starting at '-1' for the last element.</p>
 
-        <p class="code">my_array["Triceratops", "Brachiosaurus", "Stegasaurus", "Velociraptor"]<br>
+        <p class="code_r">my_array["Triceratops", "Brachiosaurus", "Stegasaurus", "Velociraptor"]<br>
         my_array[-2] # accesses the 2nd element from the end of the array, which would be "Stegasaurus"</p>
 
     <p>Hashes store information with 'keys' that have an assigned value.  To access different keys in a Hash, simply call the hash with the key.</p>
 
-        <p class="code">car = { <br>
+        <p class="code_r">car = { <br>
             "color" => "white" <br>
             "style" => "coupe" <br>
             "drive" => "RWD" <br>
