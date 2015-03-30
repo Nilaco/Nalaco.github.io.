@@ -1,0 +1,50 @@
+body {
+	background-color: #A6A6A6;
+}
+
+.content {
+	text-align: center;
+	margin: 35px;
+}
+
+#columns {
+	-webkit-column-count:3 ;
+	-webkit-column-gap: 8px;
+	-moz-column-count: 3;
+	-moz-column-gap: 8px;
+	column-count: 3;
+	column-gap: 8px;
+}
+
+/*Add Columns inside each section
+	Left (smaller) and right (larger) columns
+			Terms : Definitions;
+*/
+
+
+h1 {
+	 font-size: 45px;
+	 font-weight: bold;
+	 color: #5A0000;
+	 margin-bottom: 0px;
+}
+
+section h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+section {
+	background-color: #666666;
+	display: inline-block;
+	vertical-align: top;
+	width: 90%;
+	font-size: 16px;
+	margin: 16px;
+	padding: 10px;
+	text-align: center;
+		-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+
+}
